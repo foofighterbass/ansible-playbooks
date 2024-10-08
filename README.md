@@ -1,0 +1,1 @@
+ansible-playbook playbook.yml -u root -i hosts --private-key /Users/gladiator/.ssh/common  
