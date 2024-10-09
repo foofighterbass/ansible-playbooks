@@ -1,2 +1,4 @@
 [vpn_servers]
 vpn_server1 ansible_host=193.124.9.201
+
+[vpn_clients]

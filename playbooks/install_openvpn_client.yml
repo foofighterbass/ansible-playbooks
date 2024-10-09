@@ -1,0 +1,13 @@
+---
+- name: Converge
+  hosts: vpn_clients
+  become: true
+  gather_facts: true
+
+  tasks:
+    - name: Create openvpn client
+      ansible.builtin.include_role:
+        name: ../roles/service_openvpn
+      vars:
+        openvpn_role: "client"
+        openvpn_client_server: "127.0.0.1"
